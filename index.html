@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <input id="input" type="text" placeholder="0"/>
+    <table align="center">
+      <tr>
+        <td><button class="btn" id="allClear">AC</button></td>
+        <td><button class="btn" id="cancelEntry">CE</button></td>
+        <td><button class="btn" id="percent">%</button></td>
+        <td><button class="btn" id="divide">/</button></td>
+      </tr>
+       <tr>
+        <td><button class="btn number" id="seven" value=7>7</button></td>
+        <td><button class="btn number" id="eight" value=8>8</button></td>
+        <td><button class="btn number" id="nine" value=9>9</button></td>
+        <td><button class="btn" id="multiply">*</button></td>
+      </tr>
+       <tr>
+        <td><button class="btn number" id="four" value=4>4</button></td>
+        <td><button class="btn number" id="five" value=5>5</button></td>
+        <td><button class="btn number" id="six" value=6>6</button></td>
+        <td><button class="btn" id="subtract">-</button></td>
+      </tr>
+       <tr>
+        <td><button class="btn number" id="one" value=1>1</button></td>
+        <td><button class="btn number" id="two" value=2>2</button></td>
+        <td><button class="btn number" id="three" value=3>3</button></td>
+        <td><button class="btn" id="plus">+</button></td> 
+      </tr>
+       <tr>
+        <td><button class="btn number" id="zero" value=0>0</button></td>
+        <td><button class="btn" id="decimal" value=.>.</button></td>
+        <td><button class="btn" id="equals">=</button></td>
+<!--         <td><button id="AC">extra</button></td>  -->
+      </tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

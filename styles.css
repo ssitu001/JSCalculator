@@ -1,0 +1,31 @@
+
+div.container {
+  display: table;
+  position: relative;
+  background: #DDDDDD;
+  width: 250px;
+  height: 300px;
+  margin-top: 20px;  
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+button {
+  width: 50px;
+  height: 35px;
+}
+
+table {
+  margin-top: 100px;
+  background: blue;
+  position: absolute;
+}
+
+
+
+#input {
+  width: 200px;
+  margin-top: 50px;
+  position: absolute;
+  text-align: right;
+}
