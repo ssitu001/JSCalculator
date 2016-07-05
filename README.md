@@ -1,0 +1,2 @@
+# JSCalculator
+project for freecodecamp 
