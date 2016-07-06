@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Calculator</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -18,7 +18,7 @@
       <tr>
         <td><button class="btn" id="allClear">AC</button></td>
         <td><button class="btn" id="cancelEntry">CE</button></td>
-        <td><button class="btn" id="percent" value="%">%</button></td>
+        <td><button class="btn operator" id="percent" value="/100">%</button></td>
         <td><button class="btn operator" id="divide" value=/>/</button></td>
       </tr>
        <tr>
@@ -41,12 +41,14 @@
       </tr>
        <tr>
         <td><button class="btn number" id="zero" value=0>0</button></td>
-        <td><button class="btn" id="decimal" value=".">.</button></td>
+        <td><button class="btn operator" id="decimal" value=".">.</button></td>
+        <td><button class="btn" id="extra" disabled>S.S.</button></td> 
         <td><button class="btn" id="equals">=</button></td>
-<!--         <td><button id="AC">extra</button></td>  -->
       </tr>
     </table>
   </div>
+  
+  <div class="footer">Simon Situ for FreeCodeCamp 2016</div>
 
   <script src="app.js"></script>
 </body>

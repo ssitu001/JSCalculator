@@ -1,14 +1,9 @@
 
-//todo
-//1.get numbers to show on input
-//2. save numbers somewhere
  $(document).ready(function(){
   //global vars
   var valChainer = '';
    
-  $('#allClear').on('click', function() {                  
-    zeroOutdisplayValue()
-  });
+  $('#allClear').click(zeroOutdisplayValue);
 
   $('#cancelEntry').on('click', function() {
     valChainer = valChainer.slice(0, -1);                  
@@ -31,11 +26,13 @@
 
   });
 
-  $('#equals').on('click', function() {
+  $('#equals').click(equalsButton);
+
+  function equalsButton() {
     var evaluation = eval(valChainer);
     valChainer = evaluation.toString();
     displayValue(evaluation);
-  });
+  }
 
    
   function displayValue(num) {
@@ -46,10 +43,5 @@
     displayValue(0);
     valChainer = '';
   } 
-  // function operate(operand) {
 
-  // } 
-
-   
-   
  });
